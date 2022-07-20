@@ -37,3 +37,27 @@
 .btn-create-emp::after {
     content: "+";
 }
+
+
+.createtext1 {
+    font-size: 17px;
+    /* color: rgb(13, 166, 226); */
+    background-color: #EAF9FF;
+    margin-left: 10px;    font-size: 17px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    background-color: #EAF9FF;
+    height: 48px;
+    width: 175px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.createbtn1 {
+    background-color: #03AEEE;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 0px;
+}
