@@ -77,10 +77,10 @@ const EmployeeList = () => {
                                 {
                                     "Employee Name": "Employee Name",
                                     "Employee ID": "Employee ID",
-                                    "Joining Date": "Joining Date",
+                                    "City": "City",
                                     "Role": "Role",
-                                    "Status": "Status",
-                                    "Experience": "Experience",
+                                    "State": "State",
+                                    "ZipCode": "ZipCode",
                                     "Action": "Action"
                                 }
                             }
@@ -104,10 +104,10 @@ const EmployeeList = () => {
                                                         {
                                                             "Employee Name": emp["name"],
                                                             "Employee ID": emp["id"],
-                                                            "Joining Date": emp["joindate"],
+                                                            "City": emp["city"],
                                                             "Role": emp["role"],
-                                                            "Status": emp["status"],
-                                                            "Experience": emp["experience"],
+                                                            "State": emp["state"],
+                                                            "ZipCode": emp["zip"],
                                                             "Action": "action"
                                                         }
                                                     }
