@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    position: relative;
+    /* font-family: sans-serif;  */
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    position: absolute;
+    margin-left: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 300px - 20px);
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.header {
+    margin-top: -141px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1573px;
+    height: 100px;
+    /* UI Properties */
+    background: #FDFDFD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #9D9D9D29;
+    border-radius: 10px;
+    opacity: 1;
+    padding-left: 20px;
+
+    text-align: left;
+    font: normal normal bold 24px/32px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.header2 {
+    margin-top: -141px;
+    margin-left: -272px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1573px;
+    height: 100px;
+    /* UI Properties */
+    background: #FDFDFD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #9D9D9D29;
+    border-radius: 10px;
+    opacity: 1;
+    padding-left: 20px;
+
+    text-align: left;
+    font: normal normal bold 24px/32px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.header-title {
+    font: normal normal bold 24px/32px Nunito Sans;
+}
+
+.header-filter {
+    font: normal normal normal 18px/24px Nunito Sans;
+}
+
+.header-options {
+    display: flex;
+}
+
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.form-element {
+    width: calc(33.33% - 50px);
+    padding-right: 50px;
+}
+
+.form-element p {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    color: #b0b0b0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-element input{
+    width: 100%;
+}
+
+.form-element select{
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    width: 1573px;
+    height: 58px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #9D9D9D29;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.card-header {
+    display: flex;
+    width: 1573px;
+    height: 58px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background: #EAF9FF 0% 0% no-repeat padding-box;
+    text-align: left;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+.field {
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+
+.icons {
+    width: 10%;
+}
+
+.delete-icon {
+    color: #FA4242;
+    font-size: 1.2 rem;
+    margin-right: 5px;
+}
+
+.edit-icon{
+    color: #10AAC0;
+    font-size: 1.2 rem;
+    margin-right: 5px;
+}
+
+.emp-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emp-details-field {
+    flex-basis: 16.66%;
+    flex-grow: 0;
+}
+
+
+
+/* Login */
+.flex-half {
+    display: flex;
+}
+
+.flex-half-child1 {
+    width: 928px;
+    height: 1016px;
+    background: #03AEEE 0% 0% no-repeat padding-box;
+    opacity: 0.1;
+    margin: 32px;
+}
+
+
+.flex-half-child2 {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    flex-direction: column;
+}
+
+.flex-half-child2 p{
+    width: 100%;
+    margin: 0 50%
+}
+/* 
+.center-screen-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+
+.details {
+    display: flex;
+    margin-left: -273px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    padding-top: 0;
+    color: #000000;
+}
+
+
+.createbtn {
+    background-color: #03AEEE;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px;
+}
+
+
+h6 {
+    height: 13px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(13, 166, 226);
+    background-position: 12px;
+    margin-left: 20px;
+    padding: 20px;
+    width: 157px;
+    padding-left: 10px;
+    border-radius: 100px 0px 0px 100px
+}
+
