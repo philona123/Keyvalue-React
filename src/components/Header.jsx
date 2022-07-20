@@ -9,18 +9,18 @@ const Header = (props) => {
             <div className={className}>
                 <p className="header-title">{title}</p>
                 <div className="header-options">
-                    {(options.filter) ? 
-                        (
-                            <p className="createtext1">Create Employee</p>
-                        )                
-                        : 
-                        ( <></> )
-                    }
                     {(options.button) ?
-                    
-                        <Button handleClick={options.button.onClick}  className="createbtn1"/>
+
+                        <Button handleClick={options.button.onClick} label={options.button.content} className="createbtn1" />
                         :
                         <></>
+                    }
+                    {(options.filter) ?
+                        (
+                            <p className="createtext1">Create Employee</p>
+                        )
+                        :
+                        (<></>)
                     }
                 </div>
             </div>
