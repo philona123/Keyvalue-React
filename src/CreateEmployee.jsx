@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { useState } from "react";
 import Form from "./components/Form";
 import { useAddEmployeeMutation } from "./services/employee";
+import "./styles/button.css";
 
 const CreateEmployee = () => {
     const initialValue = {
@@ -112,16 +113,19 @@ const CreateEmployee = () => {
                     inputFields={inputFields}
                     inputSelects={inputSelects}
                     onChange={onChange}
-                    buttons={
+                    buttons=
+                    {
                         [
                             {
                                 label: "Create",
                                 name: "create",
+                                className: "btn1",
                                 handleClick: onClick
                             },
                             {
                                 label: "Cancel",
                                 name: "cancel",
+                                className: "btn2",
                                 handleClick: onClick
                             }
                         ]

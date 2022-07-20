@@ -1,7 +1,7 @@
 import InputField from "./InputField";
 import InputSelect from "./InputSelect";
 import Button from "./Button";
-import "../styles/button.css";
+// import "../styles/button.css";
 
 const Form = (props) => {
     const { id, action, inputFields, inputSelects, buttons, className, onChange } = props;
@@ -25,7 +25,7 @@ const Form = (props) => {
                                                 selected={element.selected} 
                                                 onChange={onChange}/>
                                 )}
-                {buttons.map(button => <Button label={button.label} name={button.name} className="btn1" handleClick={button.handleClick}/>)}
+                {buttons.map(button => <Button label={button.label} name={button.name} className={button.className} handleClick={button.handleClick}/>)}
                 {/* <Button label='Create' handleClick={() => {}} className='btn1'/> */}
                 {/* <Button label='Cancel' handleClick={() => {}} className='btn2'/> */}
             </form>
