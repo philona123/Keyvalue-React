@@ -26,6 +26,7 @@
     border-radius: 4px;
     border-right: 10px;
     color: rgb(128, 125, 125);
+    border: 2px solid rgb(128, 125, 125);
     cursor: pointer;
 }
 
