@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import "./styles/styles.css";
+import "./styles/empdetails.css";
 import { useGetEmployeeQuery } from "./services/employee";
 
 const EmployeeDetails = (props) => {
@@ -11,7 +11,7 @@ const EmployeeDetails = (props) => {
     if (emp) {
         return (
             <>
-                <main>
+               
                     <Header
                         title="Employee details"
                         options={
@@ -30,13 +30,13 @@ const EmployeeDetails = (props) => {
                                 <>Loading</>
                             ) : emp ? (
                                 <>
-                                    <div className="details">
+                                    <div className="emp-details">
                                         {
                                             Object.keys(emp.data).map((key) => {
                                                 return (
-                                                    <div className="emp-details-field">
-                                                        <p>{key}</p>
-                                                        <p>{emp.data[key]}</p>
+                                                    <div className="emp-details-column">
+                                                        <div className="emp-details-attribute"><p>{key}</p></div>
+                                                        <div className="emp-details-attribute"><p>{emp.data[key]}</p></div>
                                                     </div>
                                                 )
                                             })
@@ -45,7 +45,7 @@ const EmployeeDetails = (props) => {
                                 </>
                             ) : null
                     }
-                </main>
+                
 
             </>
         )

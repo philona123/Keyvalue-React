@@ -38,3 +38,25 @@
 .sidebar-list{
     display: flex;
 }
+
+
+.eml {
+    background-color: #fff;
+    border-radius: 101px;
+    width: 14px;
+    height: 11px;
+    padding: 6px;
+}
+
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    
+  }
+
+
+  h6 {
+    color:#fff;
+  }

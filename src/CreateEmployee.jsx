@@ -9,32 +9,43 @@ const CreateEmployee = () => {
         "password": "",
         "role": "",
         "departmentId": "",
-        "address": {
-            "city": "",
-            "state": "",
-            "zip": ""
-        }
-    }
-    const [ newEmpData, setNewEmpData ] = useState(initialValue)
 
-    const [addEmployee, { isLoading, error}] = useAddEmployeeMutation();
+        "city": "",
+        "state": "",
+        "zip": ""
+
+    }
+    const [newEmpData, setNewEmpData] = useState(initialValue)
+
+    const [addEmployee, { isLoading, error }] = useAddEmployeeMutation();
     const handleAddEmployee = async () => {
         try {
-          await addEmployee(newEmpData).unwrap()
-          setNewEmpData(initialValue)
+           const empData ={
+            "name": newEmpData["name"],
+            "password": newEmpData["password"],
+            "departmentId": newEmpData["departmentId"],
+            "role": newEmpData["role"],
+            "address": {
+                "city": newEmpData["city"],
+                "state": newEmpData["state"],
+                "zip": newEmpData["zip"]
+            }
+           }
+           await addEmployee(empData).unwrap();
+           setNewEmpData(initialValue)
         } catch {
-          console.log({
-            title: 'An error occurred',
-            description: "We couldn't save your emp, try again!",
-            status: 'error',
-            duration: 2000,
-            isClosable: true,
-          })
+            console.log({
+                title: 'An error occurred',
+                description: "We couldn't save your emp, try again!",
+                status: 'error',
+                duration: 2000,
+                isClosable: true,
+            })
         }
-      }
+    }
 
     const onClick = (name) => {
-        if(name === "create")
+        if (name === "create")
             handleAddEmployee()
         else {
 
@@ -42,7 +53,7 @@ const CreateEmployee = () => {
     }
 
     const inputFields = [
-        { label: "Employee Name", name: "name", type: "text"},
+        { label: "Employee Name", name: "name", type: "text" },
         { label: "Password", name: "password", type: "text" },
         { label: "Department ID", name: "departmentId", type: "text" },
         // { label: "Employee ID", name: "empId", type: "text"},
@@ -56,12 +67,12 @@ const CreateEmployee = () => {
     ]
 
     const inputSelects = [
-        { 
-            label: "Role", name: "role", 
+        {
+            label: "Role", name: "role",
             options: [
                 { key: "hr", value: "HR" },
                 { key: "manager", value: "Manager" },
-                { key: "admin", value: "Admin"}
+                { key: "admin", value: "Admin" }
             ]
         },
         // {
@@ -85,7 +96,7 @@ const CreateEmployee = () => {
     return (
         <>
             <main>
-                <Header 
+                <Header
                     title="Create Employee"
                     options={
                         {
@@ -95,12 +106,12 @@ const CreateEmployee = () => {
                     }
                     className="header"
                 />
-                <Form 
+                <Form
                     id="create-emp"
                     className="form-flex"
                     inputFields={inputFields}
                     inputSelects={inputSelects}
-                    onChange= {onChange}
+                    onChange={onChange}
                     buttons={
                         [
                             {

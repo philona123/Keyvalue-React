@@ -13,16 +13,17 @@ function SideNav() {
             </div>
 
             <ul>
-                <li>
+                
                     <a className="handle" href="/employees">
-                        <div>
+                        {/* <div>
                             <img src={ListImage} alt="List Icon"/>
-                        </div>
+                        </div> */}
                         <h6>
+                            <img src={ListImage} alt="icon" class="eml"/>&nbsp;
                             Employee List
                         </h6>
                     </a>
-                </li>
+                
             </ul>
         </nav>
     </aside>
